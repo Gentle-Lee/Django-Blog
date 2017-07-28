@@ -1,0 +1,270 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	color: black;
+	font-family: Ubuntu;
+	list-style: none;
+}
+@font-face {
+      font-family: Ubuntu;
+      src:url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+html{
+	height: 100%;
+}
+body{
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+
+.header{
+	position: fixed;
+	background-color: rgb(44,62,80);
+	width: 100%;
+	height:50px;
+}
+.header a {
+	font-size: 1.8em;
+	line-height: 50px;
+}
+.header a i,.header a {
+	color: white;
+}
+#sideBarButton{
+	margin-left: 1%;
+	color: white;
+}
+#title{
+	margin-left: 5%;
+	font-family: Ubuntu;
+	font-weight: bold;
+}
+#contact{
+	letter-spacing: 10px;
+	position: absolute;
+	right: 5%;
+}
+
+.sideBar{
+	position:fixed;
+	height: 100%;
+	width: 330px;
+	top: 0px;
+	width: 0px;
+	overflow: hidden;
+	box-shadow: 2px 0px 2px silver;
+	transition: 0.3s;
+	background-color: white;
+}
+
+#closetag i{
+	color: white;
+	font-size: 2em;
+}
+#closetag{
+	position: absolute;
+	right: 5%;
+	margin-top: 10px;
+}
+#introduction img,#introduction a,#menubar li,#socialAccount li{
+	margin-left: 10%;
+}
+#introduction{
+	background-color: rgb(41,128,185);
+	height: 200px;
+}
+#introduction img{
+	width: 100px;
+	border-radius: 100px; 
+	margin-top: 5%;
+}
+#introduction a{
+	display: block;
+}
+#name{
+	margin-top: 3%;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+}
+#jobTitle{
+	margin-top: 5px;
+	margin-bottom: 5%;
+	color: white;
+}
+
+
+#menubar{
+	margin-top: 40px;
+	height: 50%;
+}
+#menubar a li,#menubar a li i{
+ 	color: black;
+}
+#menubar a li{
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+#menubar a{
+	height: 50px;
+	display: block;
+	line-height: 50px;
+}
+#menubar a:hover{
+	background-color: rgb(224,224,224);
+}
+#menubar i{
+	margin-right: 10px;
+}
+.main{
+	width: 50%;
+	margin-left: 25%;
+	padding-top: 60px;
+	z-index: -111;
+	padding-bottom: 120px;
+}
+
+.article_title{
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+.article{
+	margin-bottom: 20px;
+	border-bottom: 1px grey solid;
+	padding: 30px 20px;
+}
+.article_title:hover{
+	color: rgb(2,119,189);
+}
+.article_time{
+	color: rgb(158,158,158);
+}
+.article_type{
+	color: white;
+	padding: 2px 5px;
+	background-color: rgb(158,158,158);
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+.article p{
+	font-size: 1.2em;
+	margin-bottom: 40px;
+}
+.text{
+	margin-top: 20px;
+}
+.readmore{
+	padding: 5px 10px; 
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-left: 70%;
+}
+.readmore:hover{
+	color: white;
+	border: 1px solid white;
+	background-color:  rgb(2,119,189);
+	transition: 0.2s;
+}
+
+.bottom{
+	z-index: -111;
+	width: 100%;
+	background-color: rgb(44,62,80);
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	text-align: center;
+}
+.bottom i{
+	color: white;
+	font-size: 20px;
+}
+.bottom p{
+	color: white;
+	font-size: 12px;
+}
+.bottom a{
+	padding: 15px;
+	display: inline-block;
+	line-height: 50px;
+}
+
+.comments_list{
+	width: 100%;
+	margin-top: 20px; 
+}
+.comment_item{
+	padding-top: 15px;
+	padding-left: 15px;
+	border-bottom: 1px grey dashed;
+}
+.comment_item i{
+	font-size: 25px;
+}
+.comment_time{
+	display: block;
+	margin-top: 10px;
+}
+.nickname{
+	min-width: 200px;
+	font-style: bold;
+	font-size: 25px;
+	margin-right: 20px;
+}
+.comment_form{
+	margin-top: 50px;
+	padding: 20px;
+	border: 2px rgb(44,62,80) solid;
+	border-radius: 20px;
+}
+.comment_container{
+	margin-left: 25%;
+}
+.comment_column{
+	margin-top: 10px;
+}
+.comment_column label,p{
+	font-weight: bold;
+}
+.comment_text{
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 30px;
+}
+.comment_btn {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color:rgb(44,62,80);
+  border: none;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  margin-left: 75%;
+}
+.comment_btn span {
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}				
+.comment_btn span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.comment_btn:hover span {
+  padding-right: 25px;
+}
+.comment_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}

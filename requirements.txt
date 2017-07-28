@@ -1,0 +1,16 @@
+certifi==2017.4.17
+chardet==3.0.4
+Django==1.10.6
+django-ckeditor==5.3.0
+django-contrib-comments==1.8.0
+django-crispy-forms==1.6.1
+django-fluent-comments==1.4.2
+django-js-asset==0.1.1
+django-tag-parser==3.1
+django-threadedcomments==1.1
+idna==2.5
+olefile==0.44
+Pillow==4.2.1
+python-akismet==0.3.0
+requests==2.18.2
+urllib3==1.22

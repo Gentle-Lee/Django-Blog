@@ -1,0 +1,64 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+	<div class="article">
+		<a href="#"><h1 class="article_title">{{ article.title }}</h1></a>
+		<span class="article_time">{{ article.created_date}}</span>
+		<span class="article_type">{{article.category}}</span>
+		<div class="text">
+		{% autoescape off %}
+			{{ article.text}}
+		{% endautoescape %}
+		</div>
+	</div>
+  <div class="comments_list">
+    <ul>
+      <h2>Comments:</h2>
+      {% for comment in comment_list %}
+      <li class="comment_item">
+        <i class="fa fa-user-circle"></i>
+        <span class="nickname">{{ comment.name }}</span>
+        <time class="comment_time">{{ comment.created_time }}</time>
+        <div class="comment_text">
+          {{ comment.text }}
+        </div>
+      </li>
+      {% empty %}
+        <li class="comment_item">
+          <span class="nickname">暂无评论</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="comment_form"> 
+    <h2>Any idea? Write it down:</h2>
+    <form action="{% url 'comments:article_comment' article.pk %}" method="post" class="comment_container">
+
+      {% csrf_token %}
+      <div class="row">
+        <div class="comment_column">
+          <label for="{{ form.name.id_for_label }}">Name:</label>
+            {{ form.name }}
+            {{ form.name.errors }}
+        </div>
+        <div class="comment_column">
+         <label for="{{ form.email.id_for_label }}">E-mail:</label>
+            {{ form.email }}
+            {{ form.email.errors }}
+        </div>
+        <div class="comment_column">
+          <label for="{{ form.url.id_for_label }}">URL：</label>
+            {{ form.url }}
+            {{ form.url.errors }}
+        </div>
+        <div class="comment_column">
+          <p>Comment:</p>
+          <label for="{{ form.text.id_for_label }}"></label>
+            {{ form.text }}
+            {{ form.text.errors }}
+          
+        </div>
+        <button type="submit" class="comment_btn"><span>Submit</span></button>
+    </div>    <!-- row -->
+    </form>
+  </div>
+{% endblock content %}

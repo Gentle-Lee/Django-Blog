@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+{% if not articles %}
+<div class="article">
+	<div class="text">
+		<h1 class="article_title">有点懒，还没开始写</h1>
+	</div>
+</div>
+{% endif %}
+{% for article in articles %}
+	<div class="article">
+		<a href="{% url 'blog:article_detail' article.pk %}"><h1 class="article_title">{{ article.title }}</h1></a>
+		<span class="article_time">{{ article.published_date}}</span>
+		<span class="article_type">{{article.category}}</span>
+		<div class="text">
+		{% autoescape off %}
+			{{ article.abstract}}
+		{% endautoescape %}
+		</div>
+		<a href="{% url 'blog:article_detail' article.pk %}" class="readmore">Read More</a>
+	</div>
+{% endfor %}
+{% endblock content %}
+	

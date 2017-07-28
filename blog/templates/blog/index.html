@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+ {% load staticfiles %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Navigation</title>
+	<link rel="icon" href="Images/bitbug_favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="{% static 'Images/bitbug_favicon.ico' %}" type="image/x-icon" />
+	<link rel="stylesheet" href="{% static 'css/index.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet"> -->
+	<script src = "{% static 'js/index.js' %}"></script>
+</head>
+<body>
+	<div id="title">
+		<h1><span>Tommy</span>'S Blog~</h1>
+		<p>	by Gentle Lee</p>
+	</div>
+	<div id="background">
+		<img src="{% static 'images/prophet.jpg' %}" alt="background_image">
+	</div>
+	
+	<div class="leftArrow" onmouseover="ArrowBlink(this)" onmouseleave="Arrowout(this)" onclick="carousel(-1)">
+		<a href="#" ><i class="fa fa-chevron-left"></i></a>
+	</div>
+		
+	<div id="menu">
+		<div class="navi" style="z-index: 999">
+			<a href="{% url 'blog:article_list'%}"><i class="fa fa-home"></i></a>
+			<a href="{% url 'blog:article_list'%}"><p>Homepage</p></a>
+		</div>
+		<div class="navi">
+			<a href="{% url 'blog:programming_list'%}"><i class="fa fa-github"></i></a>
+			<a href="{% url 'blog:programming_list'%}"><p>Programming</p></a>
+		</div>
+		<div class="navi">
+			<a href="{% url 'blog:jotting_list'%}"><i class="fa fa-pencil"></i> </a>
+			<a href="{% url 'blog:jotting_list'%}"><p>Jotting</p></a>
+		</div>
+		<div class="navi">
+			<a href="#"><i class="fa fa-user"></i></a>
+			<a href="#"><p>About</p></a>
+		</div>
+		<div class="navi">
+			<a href="#"><i class="fa fa-spinner icon-spin"></i></a>
+			<a href="#"><p>Laoding...</p></a>
+		</div>
+		
+	</div>
+	<div class="rightArrow" onmouseover="ArrowBlink(this)" onmouseleave="Arrowout(this)" onclick="carousel(1)">
+		<a href="#"><i class="fa fa-chevron-right"></i></a>
+	</div>
+
+    <div class="bottom_copyright">
+		<p>粤ICP备**********号-1
+		Copyright © 2017 inchuisiting.cn All Rights Reserved
+		</p>	
+	</div>
+</body>
+</html>
