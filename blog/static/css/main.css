@@ -119,7 +119,6 @@ body{
 	margin-right: 10px;
 }
 .main{
-	width: 60%;
 	margin-left: 25%;
 	padding-top: 60px;
 	z-index: -111;
@@ -131,10 +130,10 @@ body{
 	margin-bottom: 20px;
 }
 .article{
+	width: 80%;
 	margin-bottom: 20px;
 	border-bottom: 1px grey solid;
 	padding: 30px 20px;
-	width: 60%;
 }
 .article_title:hover{
 	color: rgb(2,119,189);
@@ -195,7 +194,7 @@ body{
 }
 
 .comments_list{
-	width: 100%;
+	width: 80%;
 	margin-top: 20px; 
 }
 .comment_item{
