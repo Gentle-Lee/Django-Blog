@@ -226,9 +226,6 @@ body{
 .comment_column{
 	margin-top: 10px;
 }
-.comment_column label,p{
-	font-weight: bold;
-}
 .comment_text{
 	margin-top: 20px;
 	margin-left: 10px;
