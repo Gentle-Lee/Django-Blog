@@ -119,6 +119,7 @@ body{
 	margin-right: 10px;
 }
 .main{
+	width: 50%;
 	margin-left: 25%;
 	padding-top: 60px;
 	z-index: -111;
@@ -130,7 +131,6 @@ body{
 	margin-bottom: 20px;
 }
 .article{
-	width: 80%;
 	margin-bottom: 20px;
 	border-bottom: 1px grey solid;
 	padding: 30px 20px;
@@ -151,17 +151,16 @@ body{
 }
 .article p{
 	font-size: 1.2em;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 .text{
 	margin-top: 20px;
-	margin-bottom: 20px;
 }
 .readmore{
 	padding: 5px 10px; 
 	border: 1px solid black;
 	border-radius: 10px;
-	margin-left: 60%;
+	margin-left: 70%;
 }
 .readmore:hover{
 	color: white;
@@ -194,7 +193,7 @@ body{
 }
 
 .comments_list{
-	width: 80%;
+	width: 100%;
 	margin-top: 20px; 
 }
 .comment_item{
