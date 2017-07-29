@@ -212,7 +212,7 @@ body{
 	min-width: 200px;
 	font-style: bold;
 	font-size: 25px;
-	margin-right: 20px;
+	margin-left: 10px;
 }
 .comment_form{
 	margin-top: 50px;
@@ -221,7 +221,7 @@ body{
 	border-radius: 20px;
 }
 .comment_container{
-	margin-left: 20%;
+	margin-left: 15%;
 }
 .comment_column{
 	margin-top: 10px;
@@ -244,7 +244,7 @@ body{
   padding: 10px;
   width: 100px;
   transition: all 0.5s;
-  margin-left: 75%;
+  margin-left: 65%;
 }
 .comment_btn span {
   color: white;
