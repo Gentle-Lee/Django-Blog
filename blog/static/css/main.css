@@ -1,10 +1,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	text-decoration: none;
-	color: black;
 	font-family: Ubuntu;
-	list-style: none;
 }
 @font-face {
       font-family: Ubuntu;
@@ -28,9 +25,14 @@ body{
 .header a {
 	font-size: 1.8em;
 	line-height: 50px;
+	text-decoration: none;
+	color: black;
+	list-style: none;
 }
 .header a i,.header a {
 	color: white;
+	text-decoration: none;
+	list-style: none;
 }
 #sideBarButton{
 	margin-left: 1%;
@@ -82,6 +84,9 @@ body{
 }
 #introduction a{
 	display: block;
+	text-decoration: none;
+	color: black;
+	list-style: none;
 }
 #name{
 	margin-top: 3%;
@@ -111,6 +116,9 @@ body{
 	height: 50px;
 	display: block;
 	line-height: 50px;
+	text-decoration: none;
+	color: black;
+	list-style: none;
 }
 #menubar a:hover{
 	background-color: rgb(224,224,224);
