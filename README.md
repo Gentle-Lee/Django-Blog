@@ -1,2 +1,1 @@
-# Blog
-Blog
+# Blog powered by Django
